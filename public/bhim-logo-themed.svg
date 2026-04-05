@@ -1,0 +1,42 @@
+<svg width="220" height="72" viewBox="0 0 220 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BHIM payment mark">
+  <defs>
+    <linearGradient id="bhim-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041018"/>
+      <stop offset="100%" stop-color="#05060B"/>
+    </linearGradient>
+    <linearGradient id="bhim-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bhim-arrow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="18" fill="url(#bhim-bg)" stroke="#0f1f2c" stroke-width="1.5" />
+
+  <g opacity="0.35" stroke="url(#bhim-text)" stroke-width="0.5">
+    <path d="M10 18h200M10 36h200M10 54h200" />
+    <path d="M48 10v52M96 10v52M144 10v52M192 10v52" />
+  </g>
+
+  <g transform="translate(26 18)" filter="url(#glow)">
+    <path d="M0 35 L18 0h26q7 0 11 4t4 10q0 5-2.5 8.5T49 25q6 2 9.5 6.5T62 42q0 9-6 14.5T39 62H10L0 35Zm20.5 0 7.5 20h12.3q5.9 0 9.4-3.3t3.5-8.6q0-4.8-3.5-7.9t-9.4-3.2H20.5Z" fill="url(#bhim-text)"/>
+    <path d="M78 0h18v25L120 0h16v62h-18V37L96 62H78V0Z" fill="url(#bhim-text)"/>
+    <path d="M147 0h18v26l26-26h21l-28 30 30 32h-22l-20.5-22L165 52v10h-18V0Z" fill="url(#bhim-text)"/>
+    <path d="m192 18 20 13-20 13" fill="none" stroke="url(#bhim-arrow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="50%" y="60" text-anchor="middle" font-family="'Space Grotesk','Inter',sans-serif" font-size="12" letter-spacing="0.35em" fill="#9ca3af">
+    BHARAT INTERFACE FOR MONEY
+  </text>
+</svg>

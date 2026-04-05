@@ -1,0 +1,67 @@
+/* Custom animations and glass utility helpers */
+
+@keyframes particleFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(8px, -20px, 0) scale(1.15);
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(-4px, -40px, 0) scale(0.85);
+    opacity: 0;
+  }
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -6px, 16px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slowSpinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-particle-float {
+  animation: particleFloat 7s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.8s ease-in-out infinite;
+}
+
+.animate-slow-spin {
+  animation: slowSpin 20s linear infinite;
+}
+
+.animate-slow-spin-reverse {
+  animation: slowSpinReverse 26s linear infinite;
+}
